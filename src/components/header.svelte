@@ -4,7 +4,7 @@
   
     // Function to detect scroll position
     const handleScroll = () => {
-      if (window.scrollY > 260) {  // Change this value to control when the navbar appears
+      if (window.scrollY > 290) {  // Change this value to control when the navbar appears
         showNavbar = true;
       } else {
         showNavbar = false;
