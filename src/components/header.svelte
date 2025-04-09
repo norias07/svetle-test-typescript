@@ -4,7 +4,7 @@
   
     // Function to detect scroll position
     const handleScroll = () => {
-      if (window.scrollY > 290) {  // Change this value to control when the navbar appears
+      if (window.scrollY > 300) {  // Change this value to control when the navbar appears
         showNavbar = true;
       } else {
         showNavbar = false;
@@ -47,7 +47,7 @@
       top: 0;
       left: 0;
       right: 0;
-      transition: opacity 0.3s;
+      transition: opacity 0.5s;
       background-color: #ba98ff;; 
       background-image: -moz-linear-gradient(90deg, #ba98ff 0%, #8e78ff 100%);
       background-image: -webkit-linear-gradient(90deg, #ba98ff 0%, #8e78ff 100%);
