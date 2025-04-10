@@ -1,10 +1,11 @@
 
 <script lang="ts">
     let showNavbar = false;
-  
+    let isHovered = false;
+    
     // Function to detect scroll position
     const handleScroll = () => {
-      if (window.scrollY > 300) {  // Change this value to control when the navbar appears
+      if (window.scrollY > 220) {  // Change this value to control when the navbar appears
         showNavbar = true;
       } else {
         showNavbar = false;
@@ -25,10 +26,15 @@
   </script>
  
  <header>
+
   <h1>Welcome to Bsides</h1>
   <p>
       This is a test site for Bsides 2025
   </p>
+  <div class="inlogging">
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+  </div>
 </header>
 <div class="navbar {showNavbar ? 'visible' : ''}">
     <nav>
@@ -39,9 +45,33 @@
       <a href="#contact">Contact</a>
     </nav>
   </div> 
+  <div class="kart">
+    
 
+
+
+  </div>
 
 <style>
+
+  .inlogging{
+    text-decoration: none;
+
+  }
+  .inlogging a{
+    gap: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8e78ff;
+    transition: background-color 0.3s ease;
+    display: inline;
+  }
+  .inlogging a:hover{
+    background-color: #9766fa;
+  }
   .navbar {
       position: fixed;
       top: 0;
@@ -78,7 +108,7 @@
     color: white;
     padding: 1rem;
     text-align: center;
-    padding-top: 100px ;
+    padding-top: 10px ;
   }
   h1{
 
