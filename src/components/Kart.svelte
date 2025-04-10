@@ -7,6 +7,7 @@
   </script>
   
   <style>
+
     .map-link {
       width: 100%;
       height: 150px; /* Set the height of the background image */

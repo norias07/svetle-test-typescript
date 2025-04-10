@@ -31,18 +31,26 @@
   <p>
       This is a test site for Bsides 2025
   </p>
-  <div class="inlogging">
-    <a href="/login">Login</a>
-    <a href="/register">Register</a>
-  </div>
+  <!--
+      <div class="inlogging">
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    </div>
+  -->
+
 </header>
 <div class="navbar {showNavbar ? 'visible' : ''}">
     <nav>
       <!-- Add your navigation items here -->
       <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
+      <button class="scroll-to-schedule" on:click={() => window.scrollTo({ top: 230, behavior: 'smooth' })}>
+        Schedule
+      </button>
+      <button class="scroll-to-schedule" on:click={() => window.scrollTo({ top: 5000, behavior: 'smooth' })}>
+        Map
+      </button>
       <a href="#contact">Contact</a>
+      <a href="#coc">Code of conduct</a>
     </nav>
   </div> 
   <div class="kart">
@@ -53,7 +61,16 @@
   </div>
 
 <style>
-
+	.scroll-to-schedule {
+	  background-color: transparent;
+	  color: rgb(255, 240, 240);
+	  border: none;
+	  padding: 10px 15px;
+	  cursor: pointer;
+    font-family: "oso-sans-variable",sans-serif;
+    
+	}
+/*
   .inlogging{
     text-decoration: none;
 
@@ -72,6 +89,7 @@
   .inlogging a:hover{
     background-color: #9766fa;
   }
+    */
   .navbar {
       position: fixed;
       top: 0;
